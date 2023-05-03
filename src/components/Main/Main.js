@@ -1,4 +1,3 @@
-import React from "react";
 import "./Main.css";
 
 import HornedBeast from "../HornedBeast/HornedBeast";
@@ -6,7 +5,7 @@ import data from "../../data.json";
 
 export default function Main() {
   const beasts = data.map((item) => {
-    return <HornedBeast id={item.id} title={item.title} imageUrl={item.image_url} description={item.description} />;
+    return <HornedBeast key={item.id} title={item.title} imageUrl={item.image_url} description={item.description} />;
   });
 
   return (
