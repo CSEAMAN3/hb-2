@@ -5,7 +5,7 @@ import data from "../../data.json";
 
 export default function Main() {
   const beasts = data.map((item) => {
-    return <HornedBeast key={item.id} title={item.title} imageUrl={item.image_url} description={item.description} />;
+    return <HornedBeast key={item._id} title={item.title} imageUrl={item.image_url} description={item.description} />;
   });
 
   return (
