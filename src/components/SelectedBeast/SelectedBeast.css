@@ -1,0 +1,17 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  min-height: 500px;
+  background-color: rgb(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal img {
+  width: 50vw;
+  height: 50vw;
+}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./HornedBeast.css";
 
-export default function HornedBeast({ title, imageUrl, description }) {
+export default function HornedBeast({ title, imageUrl, description, handleModal }) {
   const [votes, setVotes] = useState(0);
 
   function handleIncClick() {
@@ -20,7 +20,19 @@ export default function HornedBeast({ title, imageUrl, description }) {
   return (
     <>
       <h2>{title}</h2>
-      <img className="beast-img" src={imageUrl} alt={description} title={title} />
+      <img
+        onClick={() => {
+          handleModal({
+            title,
+            imageUrl,
+            description,
+          });
+        }}
+        className="beast-img"
+        src={imageUrl}
+        alt={description}
+        title={title}
+      />
       <p>{description}</p>
       <p>
         <span onClick={handleIncClick}>💚</span>
