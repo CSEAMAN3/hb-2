@@ -9,9 +9,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  color: pink;
 }
 
 .modal img {
-  width: 50vw;
-  height: 50vw;
+  width: 300px;
+  height: 300px;
 }
