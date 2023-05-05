@@ -1,3 +1,8 @@
 .header-heading {
   color: teal;
 }
+
+.header-span {
+  display: inline-block;
+  margin-right: 1rem;
+}

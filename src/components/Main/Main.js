@@ -1,10 +1,10 @@
 import "./Main.css";
 
 import HornedBeast from "../HornedBeast/HornedBeast";
-import data from "../../data.json";
+// import data from "../../data.json";
 
-export default function Main({ handleModal }) {
-  const beasts = data.map(function (item) {
+export default function Main({ handleModal, beastData }) {
+  const beasts = beastData.map((item) => {
     return (
       <HornedBeast
         key={item._id}
